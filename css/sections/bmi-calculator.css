@@ -1,0 +1,38 @@
+/*= BMI*/
+
+#bmi {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-around;
+  padding: 25px 250px;
+  gap: 120px;
+}
+
+.bmiCalculator h3 {
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  font-size: bold;
+  font-size: 50px;
+  margin: 15px 0;
+}
+
+.bmiCalculator p {
+  font-size: 16px; /* Yazı boyutu */
+  font-family: "Poppins", sans-serif;
+  font-weight: 300px;
+  color: #666; /* Yazı rengi */
+}
+
+#bmi-form {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.yourBmi {
+  display: flex;
+  align-items: center;
+}
