@@ -1,0 +1,31 @@
+/*! Stats Section*/
+/* Stats Section */
+#stats {
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0;
+  padding: 50px 30px;
+}
+
+.stat-box {
+  background-color: #fff;
+  color: black;
+  padding: 3px 15px;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1;
+  margin: 0 25px;
+}
+
+.stat-number {
+  font-size: 45px;
+  font-weight: bold;
+  color: #3a58a4;
+}
+
+.stat-title {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}

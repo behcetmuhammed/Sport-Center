@@ -1,0 +1,26 @@
+@import url(./sections/footer.css);
+@import url(./sections/contact.css);
+@import url(./sections/review.css);
+@import url(./sections/purchase.css);
+@import url(./sections/trainers.css);
+@import url(./sections/bmi-calculator.css);
+@import url(./sections/classes.css);
+@import url(./sections/highlights.css);
+@import url(./sections/header.css);
+
+/*= Body*/
+
+:root {
+  --primary-color: #315493;
+  --secondary-color: #f1f8ff;
+  --accent-color: #f39d0a;
+  /*--background-color: #f5f5f5;
+  --text-color: #333; */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
