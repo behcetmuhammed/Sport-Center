@@ -10,9 +10,18 @@
 #container {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
+  /* position: fixed; */
+  position: fixed; /* Sabit kal */
+  top: 0; /* Üstte sabit konum */
+  width: 100%;
+  z-index: 1000;
+  /* background-color: var(--primary-color); */
+  background-color: transparent; /* Başlangıçta arka plan rengi gizli */
+  transition: background-color 0.5s ease; /* Yavaş geçiş için */
+  height: 60px;
 }
 
 #nav ul {
@@ -74,6 +83,7 @@
   background-color: var(--primary-color); /* Canlı bir arka plan rengi */
   color: white; /* Beyaz yazı rengi */
   padding: 5px 10px; /* Buton boyutunu ayarlar */
+  margin-top: 50px;
   border: none; /* Kenarlık kaldırılır */
   border-radius: 5px; /* Oval kenarlar */
   font-size: 25px; /* Yazı boyutu */

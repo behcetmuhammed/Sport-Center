@@ -1,6 +1,6 @@
 
 
-// Menü açma ve kapama fonksiyonu
+/* Menü açma ve kapama fonksiyonu*/
 const menuToggle = document.getElementById('menu-toggle');
 const menu = document.getElementById('menu');
 
@@ -9,7 +9,21 @@ menuToggle.addEventListener('click', () => {
 });
 
 
-//Section Classes
+/* Scroll aşağıya indiği zaman Nav bar renk değiştirsin  */
+window.addEventListener('scroll', function() {
+    const container = document.getElementById('container');
+    const scrollY = window.scrollY; // Kullanıcının kaydırma miktarı
+    const maxScroll = 300; // Rengin tam olarak değişeceği kaydırma miktarı
+
+    // Yüzdeyi hesapla
+    let opacity = Math.min(scrollY / maxScroll, 1); // 0 ile 1 arasında kalacak şekilde
+
+    // Arka plan rengini ayarla
+    container.style.backgroundColor = `rgba(53, 85, 146, ${opacity})`; // var(--primary-color) yerinde kullanılacak arka plan rengi
+  });
+
+
+/* BMI index hesaplama  */
 document.getElementById('bmi-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -59,33 +73,5 @@ tabButtons.forEach(button => {
 });
 
 
-/*!Deneme*/
-function calculateBMI() {
-    const height = parseFloat(document.getElementById('height').value) / 100;
-    const weight = parseFloat(document.getElementById('weight').value);
-    const bmi = weight / (height * height);
-  
-    // Tüm okları gizle
-    document.getElementById('underweight-arrow').style.display = 'none';
-    document.getElementById('normal-arrow').style.display = 'none';
-    document.getElementById('overweight-arrow').style.display = 'none';
-    document.getElementById('obese-arrow').style.display = 'none';
-    document.getElementById('extremely-obese-arrow').style.display = 'none';
-  
-    // BMI değerine göre doğru oku göster
-    if (bmi < 18.5) {
-      document.getElementById('underweight-arrow').style.display = 'block';
-    } else if (bmi >= 18.5 && bmi <= 24.9) {
-      document.getElementById('normal-arrow').style.display = 'block';
-    } else if (bmi >= 25 && bmi <= 29.9) {
-      document.getElementById('overweight-arrow').style.display = 'block';
-    } else if (bmi >= 30 && bmi <= 34.9) {
-      document.getElementById('obese-arrow').style.display = 'block';
-    } else if (bmi >= 35) {
-      document.getElementById('extremely-obese-arrow').style.display = 'block';
-    }
-  
-    // Sonucu göster
-    document.getElementById('bmi-result').textContent = `Your BMI is ${bmi.toFixed(1)}`;
-  }
+
   
