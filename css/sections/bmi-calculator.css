@@ -32,6 +32,7 @@
   gap: 10px;
 }
 
+/*!BMI İndex Hesaplama*/
 .yourBmi {
   display: flex;
   flex-direction: column;
@@ -44,25 +45,37 @@
   margin: 0;
 }
 
-/*!Deneme*/
+/*! Oklar*/
 .bmi-arrow {
-  display: none;
-  color: red; /* Oku kırmızı yapalım */
-  text-align: center;
+  display: none; /* Başlangıçta ok'u gizle */
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid var(--accent-color); /* okun rengi */
+  margin: 10px;
+}
+
+.bmi-arrow.show {
+  display: block; /* Ok gösterildiğinde görünür */
 }
 
 #underweight-arrow {
-  margin-left: 0;
+  margin-left: -130px; /*zayıf*/
 }
 #normal-arrow {
-  margin-left: 50px;
+  margin-left: -70px; /*normal*/
 }
 #overweight-arrow {
-  margin-left: 100px;
+  margin-left: 10px; /*kilolu*/
 }
 #obese-arrow {
-  margin-left: 150px;
+  margin-left: 120px; /*obez*/
 }
 #extremely-obese-arrow {
-  margin-left: 200px;
+  margin-left: 235px; /*aşırı obez*/
+}
+
+#bmi-result {
+  color: #666;
 }

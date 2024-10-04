@@ -3,7 +3,7 @@
 #stats {
   background-color: var(--secondary-color);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 0 0;
   padding: 50px 30px;
 }
@@ -11,7 +11,7 @@
 .stat-box {
   background-color: #fff;
   color: black;
-  padding: 3px 15px;
+  padding: 3px 3px;
   border-radius: 5px;
   text-align: center;
   flex: 1;
