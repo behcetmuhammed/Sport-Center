@@ -1,0 +1,55 @@
+#footer {
+  background-color: var(--primary-color);
+  padding: 10px 250px 20px 150px;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.footerText p {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+.footerMenu {
+  display: flex;
+  justify-content: space-around;
+  gap: 35px;
+}
+.footerMenu .infoArea ul,
+.footerMenu .helpArea ul {
+  display: inline;
+}
+
+.footerMenu .infoArea li,
+.footerMenu .helpArea li {
+  list-style-type: none;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.footerMenu .infoArea li:hover,
+.footerMenu .helpArea li:hover {
+  background-color: var(--accent-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.footerMenu ul li:first-child {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.footerMenu ul li:first-child:hover {
+  border: none;
+  background-color: var(--primary-color);
+  cursor: auto;
+}

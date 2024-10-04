@@ -34,5 +34,35 @@
 
 .yourBmi {
   display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.valueBmi p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/*!Deneme*/
+.bmi-arrow {
+  display: none;
+  color: red; /* Oku kırmızı yapalım */
+  text-align: center;
+}
+
+#underweight-arrow {
+  margin-left: 0;
+}
+#normal-arrow {
+  margin-left: 50px;
+}
+#overweight-arrow {
+  margin-left: 100px;
+}
+#obese-arrow {
+  margin-left: 150px;
+}
+#extremely-obese-arrow {
+  margin-left: 200px;
 }

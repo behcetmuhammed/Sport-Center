@@ -1,0 +1,66 @@
+#review {
+  background-color: var(--secondary-color);
+  padding: 25px;
+}
+
+.customer1 img,
+.customer2 img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.customer1,
+.customer2 {
+  display: flex;
+  gap: 20px;
+}
+
+.customerInfo h3,
+.customerInfo p {
+  margin: 0;
+}
+
+.customer1Area,
+.customer2Area {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.customerReviews {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 150px;
+}
+
+.customer1Area .customerText,
+.customer2Area .customerText {
+  padding: 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  width: 75%;
+}
+
+.shapes {
+  display: flex;
+  justify-content: space-between;
+}
+.shape1 {
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  background-color: #3556926a;
+  padding: 20px;
+  width: 10px;
+  margin-top: -17px;
+}
+.shape2 {
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  background-color: #3556926a;
+  padding: 20px;
+  width: 10px;
+  margin-top: -17px;
+  margin-right: 95px;
+  transform: scaleX(-1);
+}

@@ -1,0 +1,42 @@
+#contact {
+  background-color: #fff;
+  padding: 25px;
+}
+
+.contactContant {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 150px;
+  padding: 10px 40px;
+  color: #666;
+  font-family: "Poppins", sans-serif;
+}
+
+.comTools1 {
+  display: flex;
+  gap: 20px;
+}
+
+.comTools1 .labelTools {
+  font-size: 18px;
+  font-weight: bold;
+}
+.comTools2 h3 {
+  margin: 5px 0;
+}
+.inputArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-content: flex-start;
+}
+
+.inputArea input,
+.inputArea textarea {
+  background-color: var(--secondary-color);
+  padding: 5px 0px 5px 18px;
+  border-radius: 3px;
+  color: #666;
+  border: none;
+}

@@ -1,0 +1,21 @@
+#purchase {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 25px;
+}
+
+.purchaseProducts {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.purchaseProducts img {
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+}

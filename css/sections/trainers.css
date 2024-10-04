@@ -1,0 +1,62 @@
+#trainers {
+  background-color: var(--secondary-color);
+  padding: 25px;
+}
+
+.trainerImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.trainer {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+.trainer img {
+  display: block;
+  width: 250px;
+  height: 300px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  border: 3px solid var(--accent-color);
+}
+
+/* Border efektlerini oluşturan elementler */
+.trainer::before,
+.trainer::after {
+  content: "";
+  position: absolute;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+/* Üst ve alt border - Önce*/
+.trainer::before {
+  width: 50%; /* Kısa kenar uzunluğunun yarısı */
+  height: 8px; /* Border kalınlığı */
+  top: 0;
+  left: 25%; /* Ortalamak için kısa kenarın %25'ine yerleştir */
+}
+
+/* Üst ve alt border - Sonra*/
+.trainer::after {
+  height: 50%; /* Uzun kenarın yarısı */
+  width: 4px; /* Border kalınlığı */
+  left: 0;
+  top: 25%; /* Ortalamak için uzun kenarın %25'ine yerleştir */
+}
+
+/* Hover anında genişleme ve animasyon */
+.trainer:hover::before {
+  width: 40%; /* Hover anında üst ve alt border %80 genişler */
+}
+
+.trainer:hover::after {
+  height: 40%; /* Hover anında sol ve sağ border %80 uzar */
+}
