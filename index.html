@@ -22,6 +22,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!--FontAwsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <!--= Header-->
@@ -305,6 +310,7 @@
 
     <!--= Trainers-->
     <section id="trainers">
+      <!--! Title-->
       <h2 class="section-title">OUR BEST TRAINERS</h2>
       <div class="section-line"></div>
       <p class="section-description">
@@ -312,21 +318,41 @@
         classical <br />
         at Hampden-Sydney College.
       </p>
+      <!--! İmage Area-->
       <div class="trainerImg">
         <div class="trainer">
           <img src="./images/trainer1.jpg" alt="trainer1" />
+          <div class="trainer-name">
+            <p class="name">John Doe</p>
+            <p class="title">Cardio Trainer</p>
+          </div>
+          <div class="border-left"></div>
+          <div class="border-right"></div>
         </div>
         <div class="trainer">
           <img src="./images/trainer2.jpg" alt="trainer2" />
+          <div class="trainer-name">
+            <p class="name">John Doe</p>
+            <p class="title">Cardio Trainer</p>
+          </div>
+          <div class="border-left"></div>
+          <div class="border-right"></div>
         </div>
         <div class="trainer">
           <img src="./images/trainer3.jpg" alt="trainer3" />
+          <div class="trainer-name">
+            <p class="name">John Doe</p>
+            <p class="title">Cardio Trainer</p>
+          </div>
+          <div class="border-left"></div>
+          <div class="border-right"></div>
         </div>
       </div>
     </section>
 
     <!--= Purchase-->
     <section id="purchase">
+      <!--! Title Area-->
       <h2 class="section-title">PURCHASE FROM US</h2>
       <div class="section-line"></div>
       <p class="section-description">
@@ -334,20 +360,54 @@
         classical <br />
         at Hampden-Sydney College.
       </p>
+      <!--! Product Card-->
       <div class="purchaseProducts">
-        <div class="purchaseImg">
-          <img src="./images/purchase1.jpg" alt="purchase1" />
+        <!-- İmage 1-->
+        <div class="price-card">
+          <div class="card-image">
+            <img src="./images/purchase1.jpg" alt="Product Image" />
+          </div>
+          <div class="card-info">
+            <h3>Kettlebell / 5kg</h3>
+            <p><s>89,99$</s> / 59,99$</p>
+            <p><i class="fa-solid fa-cart-shopping"></i>Add To Cart</p>
+          </div>
         </div>
-        <div class="purchaseImg">
-          <img src="./images/purchase2.jpg" alt="purchase2" />
+        <!-- İmage 1-->
+        <div class="price-card">
+          <div class="card-image">
+            <img src="./images/purchase2.jpg" alt="Product Image" />
+          </div>
+          <div class="card-info">
+            <h3>Treadmill</h3>
+            <p><s>899,99$</s> / 599,99$</p>
+            <p><i class="fa-solid fa-cart-shopping"></i>Add To Cart</p>
+          </div>
         </div>
-        <div class="purchaseImg">
-          <img src="./images/purchase3.jpg" alt="purchase3" />
+        <!-- İmage 1-->
+        <div class="price-card">
+          <div class="card-image">
+            <img src="./images/purchase3.jpg" alt="Product Image" />
+          </div>
+          <div class="card-info">
+            <h3>Adjustable Dumbbell</h3>
+            <p><s>89,99$</s> / 59,99$</p>
+            <p><i class="fa-solid fa-cart-shopping"></i>Add To Cart</p>
+          </div>
         </div>
-        <div class="purchaseImg">
-          <img src="./images/purchase4.jpg" alt="purchase4" />
+        <!-- İmage 1-->
+        <div class="price-card">
+          <div class="card-image">
+            <img src="./images/purchase4.jpg" alt="Product Image" />
+          </div>
+          <div class="card-info">
+            <h3>Kettlebell / 3kg</h3>
+            <p><s>89,99$</s> / 59,99$</p>
+            <p><i class="fa-solid fa-cart-shopping"></i>Add To Cart</p>
+          </div>
         </div>
       </div>
+      <!--Deneme-->
     </section>
     <!--= Review-->
     <section id="review">
@@ -462,8 +522,7 @@
                     rows="5"
                     placeholder="Your Message"
                     required
-                  >
-                  </textarea>
+                  ></textarea>
                 </div>
               </div>
             </div>

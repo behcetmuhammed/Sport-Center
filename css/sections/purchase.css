@@ -12,10 +12,50 @@
   gap: 20px;
 }
 
-.purchaseProducts img {
-  width: 250px;
-  height: 300px;
+/* Kartın genel stilini belirleme.. */
+.price-card {
   border-radius: 10px;
+  width: 250px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Taşan içeriği gizle */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: box-shadow 0.3s ease;
+}
+
+/* Fotoğraf alanı */
+.card-image {
+  flex: 3; /* Fotoğrafın 4/3 oranında yer kaplaması */
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fotoğrafı karta sığdır */
+}
+
+/* Bilgi alanı */
+.card-info {
+  flex: 1; /* Bilgilerin 4/1 oranında yer kaplaması */
+  background-color: #fff; /* Arka plan rengi */
+  padding: 10px;
+  text-align: center;
+}
+
+.card-info h3 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.card-info p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0 0 0;
+}
+
+.card-info i {
+  margin-right: 25px;
 }

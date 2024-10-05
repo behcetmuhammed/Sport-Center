@@ -1,8 +1,18 @@
 #trainers {
   background-color: var(--secondary-color);
-  padding: 25px;
+  padding: 30px;
 }
 
+.trainer img {
+  display: block;
+  width: 250px;
+  height: 300px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  border: 3px solid var(--accent-color);
+}
+
+/*! İmage Area */
 .trainerImg {
   display: flex;
   justify-content: center;
@@ -16,47 +26,113 @@
   position: relative;
   display: inline-block;
   padding: 10px;
+  overflow: hidden;
 }
 
-.trainer img {
-  display: block;
-  width: 250px;
-  height: 300px;
-  transition: all 0.3s ease;
-  border-radius: 10px;
-  border: 3px solid var(--accent-color);
-}
-
-/* Border efektlerini oluşturan elementler */
+/* Dört farklı pseudo-element ile kenarları oluştur.. */
 .trainer::before,
-.trainer::after {
+.trainer::after,
+.trainer .border-top,
+.trainer .border-right,
+.trainer .border-bottom,
+.trainer .border-left {
   content: "";
   position: absolute;
   background-color: var(--primary-color);
   transition: all 0.3s ease;
 }
 
-/* Üst ve alt border - Önce*/
+/* Üst border */
 .trainer::before {
-  width: 50%; /* Kısa kenar uzunluğunun yarısı */
-  height: 8px; /* Border kalınlığı */
+  width: 50%;
+  height: 8px; /* Üst border kalınlığı */
   top: 0;
-  left: 25%; /* Ortalamak için kısa kenarın %25'ine yerleştir */
+  left: 75px;
 }
 
-/* Üst ve alt border - Sonra*/
+/* Alt border */
 .trainer::after {
-  height: 50%; /* Uzun kenarın yarısı */
-  width: 4px; /* Border kalınlığı */
-  left: 0;
-  top: 25%; /* Ortalamak için uzun kenarın %25'ine yerleştir */
+  width: 50%;
+  height: 8px; /* Alt border kalınlığı */
+  bottom: 0;
+  left: 75px;
 }
 
-/* Hover anında genişleme ve animasyon */
+/* Sol border */
+.trainer .border-left {
+  width: 8px;
+  height: 50%;
+  top: 100px;
+  left: 0;
+}
+
+/* Sağ border */
+.trainer .border-right {
+  width: 8px;
+  height: 50%;
+  top: 100px;
+  right: 0;
+}
+
+/* Hover efektleri */
 .trainer:hover::before {
-  width: 40%; /* Hover anında üst ve alt border %80 genişler */
+  width: 50%; /* Üst genişler */
 }
 
 .trainer:hover::after {
-  height: 40%; /* Hover anında sol ve sağ border %80 uzar */
+  width: 25%; /* Alt genişler */
+}
+
+.trainer:hover .border-left {
+  height: 25%; /* Sol uzar */
+}
+
+.trainer:hover .border-right {
+  height: 25%; /* Sağ uzar */
+}
+
+/*! İsim ve Ünvan*/
+.trainer-name {
+  position: absolute;
+  bottom: 20px; /* alttan 20px yükseklik ver */
+  left: 50%;
+  white-space: nowrap; /* Bir satıra sığdır*/
+  transform: translateX(-50%); /* Ortala.. */
+  padding: 15px 50px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  clip-path: polygon(
+    0% 15%,
+    15% 15%,
+    15% 0%,
+    85% 0%,
+    85% 15%,
+    100% 15%,
+    100% 85%,
+    85% 85%,
+    85% 100%,
+    15% 100%,
+    15% 85%,
+    0% 85%
+  );
+  text-align: center;
+  opacity: 0; /* İlk başta görünmesin */
+  transition: opacity 0.4s ease; /* Geçiş efekti ayarı */
+}
+
+.trainer:hover .trainer-name {
+  opacity: 1; /* Hover sırasında görün */
+}
+
+.trainer-name p {
+  margin: 0;
+  padding: 0;
+}
+
+.trainer-name .title {
+  font-weight: 300;
+  font-size: 14px;
 }
