@@ -53,3 +53,50 @@
   background-color: var(--primary-color);
   cursor: auto;
 }
+
+/*= Mobil - Responsive Design for Footer Section (max 576px) */
+@media (max-width: 576px) {
+  #footer {
+    padding: 20px 10px;
+  }
+
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerLogo {
+    margin-right: auto; /* Logo sola yasla */
+    align-self: flex-start; /* Logo sola yasla */
+  }
+
+  .footerText p {
+    font-size: 18px;
+    text-align: start;
+    padding: 0 10px;
+  }
+
+  .footerMenu {
+    align-items: center;
+    gap: 150px; /* Aralıkları daralt */
+  }
+
+  .footerMenu .infoArea ul,
+  .footerMenu .helpArea ul {
+    display: flex; /* Yan yana hizala */
+    flex-direction: column; /* Dikey hizala */
+    align-items: start; /* Ortala */
+    padding: 0; /* Padding kaldır */
+  }
+
+  .footerMenu .infoArea li,
+  .footerMenu .helpArea li {
+    font-size: 18px;
+    padding: 5px 0;
+  }
+
+  .footerMenu .infoArea li:first-child,
+  .footerMenu .helpArea li:first-child {
+    font-size: 25px; /* Başlık boyutunu küçült */
+  }
+}

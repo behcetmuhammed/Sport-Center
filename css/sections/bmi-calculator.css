@@ -79,3 +79,66 @@
 #bmi-result {
   color: #666;
 }
+
+/*= Mobil - Responsive Design for BMI Section (max 576px) */
+@media (max-width: 576px) {
+  #bmi {
+    flex-direction: column; /* Dikey hizalama */
+    padding: 20px;
+    gap: 30px; /* Daha küçük boşluk */
+  }
+
+  .bmiCalculator h3 {
+    font-size: 35px; /* Başlığı küçültme */
+  }
+
+  .bmiCalculator p {
+    font-size: 14px; /* Paragraf yazı boyutunu küçültme */
+  }
+
+  #bmi-form {
+    flex-direction: row; /* Form elemanlarını dikey hizalama */
+    gap: 5px;
+  }
+
+  .yourBmi {
+    align-items: center;
+  }
+
+  .valueBmi p {
+    font-size: 16px; /* BMI sonucunun yazı boyutunu küçültme */
+  }
+
+  /* Okların yerleşimi mobilde düzgün görünmesi için */
+  #underweight-arrow {
+    margin-left: -50px;
+  }
+
+  #normal-arrow {
+    margin-left: -20px;
+  }
+
+  #overweight-arrow {
+    margin-left: 20px;
+  }
+
+  #obese-arrow {
+    margin-left: 70px;
+  }
+
+  #extremely-obese-arrow {
+    margin-left: 120px;
+  }
+
+  .arrows {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Oklar arasında boşluk */
+  }
+
+  /* BMI resmi */
+  .yourBmi img {
+    width: 100%; /* Genişliği yüzde yaparak mobil uyumlu hale getirme */
+    height: auto;
+  }
+}

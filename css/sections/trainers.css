@@ -29,6 +29,7 @@
   overflow: hidden;
 }
 
+/*! Border animasyonları*/
 /* Dört farklı pseudo-element ile kenarları oluştur.. */
 .trainer::before,
 .trainer::after,
@@ -135,4 +136,70 @@
 .trainer-name .title {
   font-weight: 300;
   font-size: 14px;
+}
+
+/*= Mobil - Responsive Design for Trainer Section (max 576px) */
+/* Responsive Design for Trainers Section (max 576px) */
+@media (max-width: 576px) {
+  #trainers {
+    padding: 20px 15px; /* Daha dar padding */
+  }
+
+  /* Title alignment and font size adjustments */
+  .section-title {
+    font-size: 24px; /* Başlık boyutunu küçült */
+    text-align: center;
+  }
+
+  .section-line {
+    margin: 10px auto; /* Ortala */
+    width: 60px;
+  }
+
+  .section-description {
+    font-size: 14px; /* Açıklama boyutunu küçült */
+    text-align: center; /* Ortala */
+  }
+
+  /* Trainer images alignment and size adjustment */
+  .trainerImg {
+    flex-direction: column; /* Dikey hizala */
+    gap: 20px; /* Aralıkları azalt */
+  }
+
+  .trainer img {
+    width: 200px; /* Genişliği küçült */
+    height: 240px; /* Yüksekliği küçült */
+  }
+
+  /* Trainer name section adjustments */
+  .trainer-name {
+    padding: 10px 30px; /* Padding'i azalt */
+    font-size: 16px; /* Yazı boyutunu küçült */
+  }
+
+  .trainer-name .title {
+    font-size: 12px; /* Ünvan boyutunu küçült */
+  }
+
+  /* Border adjustments */
+  .trainer::before,
+  .trainer::after,
+  .trainer .border-left,
+  .trainer .border-right {
+    background-color: var(--primary-color);
+  }
+
+  .trainer::before {
+    height: 4px; /* Üst border kalınlığı */
+  }
+
+  .trainer::after {
+    height: 4px; /* Alt border kalınlığı */
+  }
+
+  .trainer .border-left,
+  .trainer .border-right {
+    width: 4px; /* Kenar border kalınlığı */
+  }
 }

@@ -24,6 +24,17 @@
   height: 60px;
 }
 
+/* Logoyu solda konumlandırmak için */
+#logo {
+  flex: 1; /* Alanı kapla */
+}
+
+/* Menüyü sağa konumlandırmak için */
+#nav {
+  flex: 1;
+  text-align: right; /* Menü elemanlarını sağa hizala */
+}
+
 #nav ul {
   list-style: none;
   padding: 0;
@@ -46,24 +57,24 @@
 
 .joinas {
   background-color: orange;
-  padding: 5px 10px; /* Buton boyutunu ayarlar */
-  color: white; /* Yazı rengini beyaz yapar */
-  text-decoration: none; /* Alt çizgiyi kaldırır */
-  border-radius: 5px; /* Oval kenar yapar */
-  transition: background-color 0.3s ease; /* Hover sırasında geçiş efekti ekler */
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none; /* Alt çizgiyi kaldır */
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Hover sırasında geçiş efekti ekle */
 }
 
 .joinas:hover {
-  background-color: darkorange; /* Hover durumunda arka plan rengini değiştirir */
+  background-color: darkorange; /* Hover durumunda arka plan rengini değiştir */
 }
 
 /*! Mobil*/
 /* Menü açma butonu */
 .menu-toggle {
-  display: none; /* Varsayılan olarak gizli */
-  font-size: 30px; /* Menü simgesi boyutu */
-  color: #fff; /* Menü simgesi rengi */
-  cursor: pointer; /* İmleç el işareti olur */
+  display: none; /* Varsayılan olarak gizli yap.. */
+  font-size: 30px; /* Menü simgesi boyutu.. */
+  color: #fff; /* Menü simgesinin rengi */
+  cursor: pointer; /* İmleç el işareti yap */
 }
 
 .hidden {
@@ -80,15 +91,15 @@
 }
 /* POWERFULL butonu */
 #contentsHeader button {
-  background-color: var(--primary-color); /* Canlı bir arka plan rengi */
-  color: white; /* Beyaz yazı rengi */
-  padding: 5px 10px; /* Buton boyutunu ayarlar */
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5px 10px;
   margin-top: 50px;
-  border: none; /* Kenarlık kaldırılır */
-  border-radius: 5px; /* Oval kenarlar */
-  font-size: 25px; /* Yazı boyutu */
-  font-weight: bold; /* Yazıyı kalın yapar */
-  cursor: pointer; /* Üzerine gelindiğinde el işareti çıkar */
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
   transition: background-color 0.3s ease; /* Hover efekti geçişi */
 }
 
@@ -151,7 +162,7 @@
   background-color: var(--primary-color);
 }
 
-/*= Responsive Tasarım*/
+/*= Mobil - Responsive Design for Headers Section (max 576px) */
 
 @media (max-width: 576px) {
   #content {
@@ -187,16 +198,6 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 10px 0;
-  }
-
-  #stats {
-    flex-direction: column; /* İstatistik kutularını dikey yerleştir */
-    align-items: center; /* Ortala */
-  }
-
-  .stat-box {
-    margin: 10px 0; /* Üst ve alt boşluk ekle */
-    width: 90%; /* Kutuların genişliğini artır */
   }
 
   #contentsHeader button,

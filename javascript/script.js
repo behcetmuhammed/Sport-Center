@@ -1,12 +1,21 @@
 
 
-/* Menü açma ve kapama fonksiyonu*/
-const menuToggle = document.getElementById('menu-toggle');
-const menu = document.getElementById('menu');
+// /* Menü açma ve kapama fonksiyonu*/
+// const menuToggle = document.getElementById('menu-toggle');
+// const menu = document.getElementById('menu');
 
-menuToggle.addEventListener('click', () => {
-  menu.classList.toggle('hidden'); // Menü gizliyse aç, açıksa kapat
+// menuToggle.addEventListener('click', () => {
+//   menu.classList.toggle('hidden'); // Menü gizliyse aç, açıksa kapat
+// });
+
+/* Menü açma ve kapama fonksiyonu*/
+const menuToggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+menuToggle.addEventListener("click", () => {
+  menu.classList.toggle("show"); // Menü gizliyse aç, açıksa kapat
 });
+
 
 
 /* Scroll aşağıya indiği zaman Nav bar renk değiştirsin  */

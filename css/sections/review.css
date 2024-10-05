@@ -64,3 +64,73 @@
   margin-right: 95px;
   transform: scaleX(-1);
 }
+
+/*= Mobil - Responsive Design for Review Section (max 576px) */
+@media (max-width: 576px) {
+  #review {
+    padding: 20px 10px; /* Daha dar padding */
+  }
+
+  .section-title {
+    font-size: 24px; /* Başlık boyutunu küçült */
+    text-align: center; /* Ortala */
+  }
+
+  .section-line {
+    margin: 10px auto; /* Ortala */
+    width: 60px; /* Çizgi genişliği */
+  }
+
+  .section-description {
+    font-size: 14px; /* Açıklama boyutunu küçült */
+    text-align: center; /* Ortala */
+  }
+
+  .customerReviews {
+    flex-direction: column; /* Dikey hizala */
+    align-items: center; /* Ortala */
+    margin: 0; /* Margin'leri sıfırla */
+    gap: 20px; /* Aralıkları daralt */
+  }
+
+  .customer1Area,
+  .customer2Area {
+    flex-direction: column; /* Dikey hizala */
+    align-items: start; /* Ortala */
+    padding-left: 0; /* Soldan padding'i sıfırla */
+  }
+
+  .customer1 img,
+  .customer2 img {
+    height: 40px; /* Resim boyutunu küçült */
+    width: 40px; /* Resim boyutunu küçült */
+  }
+
+  .customer1Area .customerText,
+  .customer2Area .customerText {
+    width: 90%; /* Metin balonunun genişliğini artır */
+    padding: 15px; /* Daha az padding */
+    font-size: 14px; /* Metin boyutunu küçült */
+  }
+
+  .shapes {
+    display: flex;
+    justify-content: space-between;
+  }
+  .shape1 {
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    background-color: #3556926a;
+    padding: 20px;
+    width: 10px;
+    margin-top: -17px;
+  }
+  .shape2 {
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    background-color: #3556926a;
+    padding: 20px;
+    width: 10px;
+    margin-top: -17px;
+    margin-right: 24px;
+    transform: scaleX(-1);
+  }
+}

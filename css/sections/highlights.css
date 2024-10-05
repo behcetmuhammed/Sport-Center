@@ -29,3 +29,17 @@
   margin-top: 10px;
   font-weight: bold;
 }
+
+/*= Mobil - Responsive Design for Highlights Section (max 576px) */
+/* Stats Section */
+@media (max-width: 576px) {
+  #stats {
+    flex-direction: column; /* İstatistik kutularını dikey yerleştir */
+    align-items: center; /* Ortala */
+  }
+  .stat-box {
+    margin: 10px 0; /* Üst ve alt boşluk ekle */
+    width: 70%; /* Kutuların genişliğini artır */
+    padding: -25px 15px;
+  }
+}

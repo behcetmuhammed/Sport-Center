@@ -41,3 +41,64 @@
   border: none;
   font-family: "Poppins", sans-serif;
 }
+
+/*= Mobil - Responsive Design for Contact Section (max 576px) */
+@media (max-width: 576px) {
+  #contact {
+    padding: 20px 10px; /* Daha dar padding */
+  }
+
+  .section-title {
+    font-size: 24px; /* Başlık boyutunu küçült */
+    text-align: center; /* Ortala */
+  }
+
+  .section-line {
+    margin: 10px auto; /* Ortala */
+    width: 60px; /* Çizgi genişliği */
+  }
+
+  .section-description {
+    font-size: 25px; /* Açıklama boyutunu küçült */
+    text-align: center; /* Ortala */
+    /* max-width: 40%; */
+    /* margin-left: 165px; */
+  }
+
+  .contactContant {
+    flex-direction: column; /* Dikey hizala */
+    align-items: center; /* Ortala */
+    gap: 20px; /* Aralıkları daralt */
+    padding: 10px; /* Padding'i daralt */
+  }
+
+  .comTools1 {
+    align-items: center; /* Ortala */
+    gap: 100px; /* Aralıkları daralt */
+  }
+
+  .comTools1 .labelTools {
+    font-size: 16px; /* Küçült */
+  }
+
+  .comTools2 h3 {
+    font-size: 18px; /* Başlık boyutunu küçült */
+    text-align: start;
+    margin: 10px 0;
+  }
+
+  .inputArea {
+    width: 100%;
+  }
+
+  .inputArea input,
+  .inputArea textarea {
+    width: 450px;
+    padding: 10px; /* Daha fazla padding */
+  }
+
+  .contactMap iframe {
+    width: 470px;
+    height: 500px; /* Harita yüksekliğini ayarla */
+  }
+}
