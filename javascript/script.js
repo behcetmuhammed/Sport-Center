@@ -1,21 +1,11 @@
 
-
-// /* Menü açma ve kapama fonksiyonu*/
-// const menuToggle = document.getElementById('menu-toggle');
-// const menu = document.getElementById('menu');
-
-// menuToggle.addEventListener('click', () => {
-//   menu.classList.toggle('hidden'); // Menü gizliyse aç, açıksa kapat
-// });
-
-/* Menü açma ve kapama fonksiyonu*/
+/* Hamburger Menü açma ve kapama fonksiyonu*/
 const menuToggle = document.getElementById("menu-toggle");
 const menu = document.getElementById("menu");
 
 menuToggle.addEventListener("click", () => {
   menu.classList.toggle("show"); // Menü gizliyse aç, açıksa kapat
 });
-
 
 
 /* Scroll aşağıya indiği zaman Nav bar renk değiştirsin  */
@@ -32,7 +22,7 @@ window.addEventListener('scroll', function() {
   });
 
 
-  /*! Yoga butonlarını aktif etme işlemi*/
+/*! Yoga butonlarını aktif etme işlemi*/
 const tabButtons = document.querySelectorAll('.tab-btn');
 const tabPanels = document.querySelectorAll('.tab-panel');
 
