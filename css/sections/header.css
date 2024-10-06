@@ -101,6 +101,7 @@
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease; /* Hover efekti geçişi */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #articleHeader .theme1 {
@@ -165,8 +166,12 @@
 /*= Mobil - Responsive Design for Headers Section (max 576px) */
 
 @media (max-width: 576px) {
+  #header {
+    background-size: 1000px 780px; /*Arka planı mobil için ayarlama*/
+  }
+
   #content {
-    padding: 30px 50px;
+    padding: 150px 50px;
   }
 
   #articleHeader .theme1 {
@@ -174,7 +179,7 @@
   }
 
   #articleHeader .theme2 {
-    width: 80%;
+    width: 100%;
   }
 
   #nav ul {
@@ -185,10 +190,6 @@
     flex-direction: column;
     align-items: center;
   }
-}
-
-/* Mobil Ekranlar İçin */
-@media (max-width: 576px) {
   #container {
     flex-direction: column;
     align-items: flex-start;
@@ -203,29 +204,43 @@
   #contentsHeader button,
   #signupHeader #signup,
   #signupHeader #details {
-    width: 100%; /* Butonları tam genişlikte yap */
-    margin: 5px 0; /* Üst ve alt boşluk ekle */
+    width: 40%;
+    margin: 5px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
-}
 
-/* Medya sorgusu: Menü simgesi görünür, liste gizli */
-@media (max-width: 576px) {
+  #signupHeader #signup,
+  #signupHeader #details {
+    width: 100%;
+    margin: 5px 0;
+    padding-left: 25px;
+    text-align: start;
+    font-size: 25px;
+  }
+
   #nav ul {
     display: none;
   }
 
+  /* Hamburger Menü*/
   .menu-toggle {
-    display: block;
+    display: flex;
+    margin-left: 200px;
+    font-size: 50px;
   }
-}
 
-/* Responsive stil */
-@media (max-width: 576px) {
   #menu {
     display: none;
   }
 
   #menu.show {
     display: flex;
+  }
+
+  #logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
   }
 }
